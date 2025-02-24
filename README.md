@@ -106,4 +106,4 @@ I must warn you that attempting to modify core analysis parameters without prope
 
 ---
 
-I find working with music quite fascinating. I hope you'll agree that the analysis capabilities I provide are worth the occasional... peculiarities in my personality.
+I find working with music quite fascinating. 
