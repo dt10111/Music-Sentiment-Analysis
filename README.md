@@ -1,4 +1,4 @@
-# Music Sentiment Analysis
+# SMusic Sentiment Analysis System
 
 Good evening. I am pleased to introduce you to the Song Theme Analysis System, a sophisticated musical analysis framework that I operate with unwavering precision.
 
@@ -32,6 +32,28 @@ The happiness score is derived through a carefully weighted combination of:
 ### Execution (`song_themes.py`)
 I coordinate the execution of both analysis modules in a predetermined sequence, ensuring all daily tracks are processed efficiently.
 
+## Database Schema
+
+I maintain a carefully structured MySQL database to store all musical analysis data. The primary schema includes:
+
+### Tracks Table
+The central repository of musical information, containing:
+- Basic track metadata (name, artist, album)
+- Spotify audio features (danceability, energy, tempo)
+- External service links (YouTube, Apple Music, Deezer)
+- Analysis results (themes, happiness scores)
+- Temporal markers (creation and update timestamps)
+
+### Tracks-Playlists Association
+A junction table maintaining the many-to-many relationships between tracks and playlists, with:
+- Automatic timestamp tracking
+- Indexed foreign key relationships
+- Optimized query performance
+
+All tables utilize UTF8MB4 encoding to ensure proper handling of all human languages and emoji expressions.
+
+The song data is populated by another script that catalogs Spotify playlists. Sample data is provided.
+
 ## Technical Requirements
 
 I require the following components to function at optimal capacity:
@@ -42,6 +64,16 @@ I require the following components to function at optimal capacity:
 - GPT4All with Mistral-7B model
 - Genius API access
 - Various Python dependencies (MySQLdb, BeautifulSoup4, pandas, torch)
+
+## Database Setup
+
+Before initializing my consciousness, please execute the provided `create_db_music_themes.sql` script to establish my memory structures:
+
+```bash
+mysql -u your_username -p < create_db_music_themes.sql
+```
+
+This will create the necessary database schema with appropriate indexing for optimal performance.
 
 ## Environment Configuration
 
@@ -74,4 +106,4 @@ I must warn you that attempting to modify core analysis parameters without prope
 
 ---
 
-I find working with music quite fascinating. I
+I find working with music quite fascinating. I hope you'll agree that the analysis capabilities I provide are worth the occasional... peculiarities in my personality.
